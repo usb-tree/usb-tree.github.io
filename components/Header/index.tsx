@@ -29,10 +29,10 @@ const Header = () => {
           : ""
       }`}
     >
-      <div className="max-w-c-1390 relative mx-auto flex items-center justify-between px-4 md:px-8 2xl:px-0">
+      <div className="max-w-c-1390 relative mx-auto flex flex-col items-center justify-between px-4 md:px-8 lg:flex-row 2xl:px-0">
         {/* Logo and Title - Left Side */}
         <Link href="/" className="flex items-center gap-3">
-          <img src="/images/logo/logo-dark.svg" alt="logo" />
+          <img src="/images/logo/logo.svg" alt="logo" />
           <h1 className="text-2xl font-bold text-black lg:text-3xl dark:text-white">
             USB Tree
           </h1>

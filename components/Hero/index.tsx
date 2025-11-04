@@ -28,37 +28,24 @@ const Hero = () => {
 
             <div className="animate_right hidden px-15 md:w-1/2 lg:block">
               <div className="relative 2xl:-mr-7.5">
-                <Image
+                <img
                   src="/images/shape/shape-01.png"
                   alt="shape"
-                  width={46}
-                  height={246}
                   className="absolute top-0 -left-11.5"
                 />
-                <Image
+                <img
                   src="/images/shape/shape-02.svg"
                   alt="shape"
-                  width={37}
-                  height={37}
                   className="absolute right-0 bottom-0 z-10"
                 />
-                <Image
+                <img
                   src="/images/shape/shape-03.svg"
                   alt="shape"
-                  width={22}
-                  height={22}
                   className="absolute -right-6.5 bottom-0 z-1"
                 />
                 <div className="relative aspect-320/330">
                   <Image
-                    className="shadow-solid-l dark:hidden"
-                    src="/images/hero/hero.gif"
-                    alt="Hero"
-                    unoptimized
-                    fill
-                  />
-                  <Image
-                    className="shadow-solid-l hidden dark:block"
+                    className="shadow-solid-l"
                     src="/images/hero/hero.gif"
                     alt="Hero"
                     unoptimized
