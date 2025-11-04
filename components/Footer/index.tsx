@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -10,7 +11,7 @@ const Footer = () => {
           <div className="py-20">
             <div className="flex flex-wrap justify-center gap-8">
               <a>USB Tree GitHub</a>
-              <a href="">Website Source</a>
+              <a href="#">Website Source</a>
             </div>
           </div>
           {/* <!-- Footer Top --> */}

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "This is Error page for Solid Pro",
 };
 
-const ErroPage = () => {
+const ErrorPage = () => {
   return (
     <section className="overflow-hidden pt-45 pb-25 lg:pt-50 lg:pb-32.5 xl:pt-55 xl:pb-37.5">
       <div className="animate_top mx-auto max-w-[518px] text-center">
@@ -52,4 +52,4 @@ const ErroPage = () => {
   );
 };
 
-export default ErroPage;
+export default ErrorPage;
