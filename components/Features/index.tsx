@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import featuresData from "./featuresData";
 import SingleFeature from "./SingleFeature";
