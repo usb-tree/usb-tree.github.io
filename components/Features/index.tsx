@@ -9,12 +9,12 @@ const Feature = () => {
     <>
       {/* <!-- ===== Features Start ===== --> */}
       <section id="features" className="py-15 lg:py-20 xl:py-25">
-        <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
+        <div className="max-w-c-1315 mx-auto px-4 md:px-8 xl:px-0">
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
               title: "Features",
-                subtitle: "",
+              subtitle: "",
               description: ``,
             }}
           />

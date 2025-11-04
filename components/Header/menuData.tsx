@@ -1,7 +1,5 @@
 import { Menu } from "@/types/menu";
 
-const menuData: Menu[] = [
-
-];
+const menuData: Menu[] = [];
 
 export default menuData;

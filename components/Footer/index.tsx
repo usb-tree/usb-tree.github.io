@@ -4,23 +4,19 @@ import { motion } from "framer-motion";
 const Footer = () => {
   return (
     <>
-      <footer className="border-t border-stroke bg-white dark:border-strokedark dark:bg-blacksection">
-        <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
+      <footer className="border-stroke dark:border-strokedark dark:bg-blacksection border-t bg-white">
+        <div className="max-w-c-1390 mx-auto px-4 md:px-8 2xl:px-0">
           {/* <!-- Footer Top --> */}
-          <div className="py-20 ">
-            <div className="flex flex-wrap gap-8 justify-center">
-
-                <a>USB Tree GitHub</a>
-                <a href="">Website Source</a>
-
-
+          <div className="py-20">
+            <div className="flex flex-wrap justify-center gap-8">
+              <a>USB Tree GitHub</a>
+              <a href="">Website Source</a>
             </div>
           </div>
           {/* <!-- Footer Top --> */}
 
           {/* <!-- Footer Bottom --> */}
-          <div className="flex flex-col flex-wrap items-center justify-center gap-5 border-t border-stroke py-7 dark:border-strokedark ">
-
+          <div className="border-stroke dark:border-strokedark flex flex-col flex-wrap items-center justify-center gap-5 border-t py-7">
             <motion.div
               variants={{
                 hidden: {
@@ -39,9 +35,7 @@ const Footer = () => {
               viewport={{ once: true }}
               className="animate_top"
             >
-              <p>
-                &copy; {new Date().getFullYear()} Alastair Ozmond
-              </p>
+              <p>&copy; {new Date().getFullYear()} Alastair Ozmond</p>
             </motion.div>
 
             <motion.div
@@ -66,7 +60,7 @@ const Footer = () => {
                 <li>
                   <a href="#" aria-label="social icon">
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="hover:fill-primary fill-[#D1D8E0] transition-all duration-300"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -90,7 +84,7 @@ const Footer = () => {
                 <li>
                   <a href="#" aria-label="social icon">
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="hover:fill-primary fill-[#D1D8E0] transition-all duration-300"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -114,7 +108,7 @@ const Footer = () => {
                 <li>
                   <a href="#" aria-label="social icon">
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="hover:fill-primary fill-[#D1D8E0] transition-all duration-300"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -138,7 +132,7 @@ const Footer = () => {
                 <li>
                   <a href="#" aria-label="social icon">
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="hover:fill-primary fill-[#D1D8E0] transition-all duration-300"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
