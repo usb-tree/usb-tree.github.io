@@ -37,15 +37,15 @@ const Hero = () => {
                 <Image
                   src="/images/shape/shape-02.svg"
                   alt="shape"
-                  width={36.9}
-                  height={36.7}
+                  width={37}
+                  height={37}
                   className="absolute right-0 bottom-0 z-10"
                 />
                 <Image
                   src="/images/shape/shape-03.svg"
                   alt="shape"
-                  width={21.64}
-                  height={21.66}
+                  width={22}
+                  height={22}
                   className="absolute -right-6.5 bottom-0 z-1"
                 />
                 <div className="relative aspect-320/330">
