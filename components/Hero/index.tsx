@@ -51,14 +51,14 @@ const Hero = () => {
                 <div className="relative aspect-320/330">
                   <Image
                     className="shadow-solid-l dark:hidden"
-                    src="/images/hero/Hero.gif"
+                    src="/images/hero/hero.gif"
                     alt="Hero"
                     unoptimized
                     fill
                   />
                   <Image
                     className="shadow-solid-l hidden dark:block"
-                    src="/images/hero/Hero.gif"
+                    src="/images/hero/hero.gif"
                     alt="Hero"
                     unoptimized
                     fill
