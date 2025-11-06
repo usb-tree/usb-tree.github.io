@@ -21,7 +21,7 @@ export default function Hero() {
                 USB ports, when you want to find out what speeds they're running
                 at, or you're diagnosing any USB device related issues.
               </p>
-              <p>
+              <p className="mt-4">
                 You'll quickly be able to identify which devices are connected
                 or disconnected, and see if there's just too many USB devices
                 connected to a single USB root hub.

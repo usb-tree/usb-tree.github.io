@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 import ThemeToggler from "./ThemeToggler";
@@ -32,23 +31,29 @@ export default function Header() {
     >
       <div className="max-w-c-1390 relative mx-auto flex flex-col items-center justify-between px-4 md:px-8 lg:flex-row 2xl:px-0">
         {/* Logo and Title - Left Side */}
-        <Link href="/" className="flex items-center gap-3">
+        <a href="/" className="flex items-center gap-3">
           <img src="/images/logo/logo.svg" alt="logo" className="h-9" />
           <h1 className="text-2xl font-bold text-black lg:text-4xl dark:text-white">
             USB Tree
           </h1>
-        </Link>
+        </a>
 
         {/* Links - Right Side */}
         <div className="flex items-center gap-6">
           <ThemeToggler />
 
-          <Link
-            href="https://github.com/NextJSTemplates/solid-nextjs"
-            className="text-regular hover:text-primary text-waterloo font-medium"
+          <a
+            href="https://github.com/AOzmond/usb-tree"
+            className="transition-colors hover:opacity-70"
           >
-            GitHub Repo 🌟
-          </Link>
+            <img
+              src="/images/icon/github.svg"
+              alt="github logo"
+              width="21"
+              height="21"
+              className="dark:invert"
+            />
+          </a>
         </div>
       </div>
     </header>
