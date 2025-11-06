@@ -5,7 +5,11 @@ import featuresData from "./featuresData";
 import SingleFeature from "./SingleFeature";
 import SectionHeader from "../Common/SectionHeader";
 
-const Feature = () => {
+function renderFeature(feature: any, key: number) {
+  return <SingleFeature feature={feature} key={key} />;
+}
+
+export default function Feature() {
   return (
     <>
       {/* <!-- ===== Features Start ===== --> */}
@@ -24,9 +28,7 @@ const Feature = () => {
           <div className="mt-12.5 grid grid-cols-1 gap-7.5 md:grid-cols-2 lg:mt-15 lg:grid-cols-2 xl:mt-20 xl:gap-12.5">
             {/* <!-- Features item Start --> */}
 
-            {featuresData.map((feature, key) => (
-              <SingleFeature feature={feature} key={key} />
-            ))}
+            {featuresData.map(renderFeature)}
             {/* <!-- Features item End --> */}
           </div>
         </div>
@@ -35,6 +37,4 @@ const Feature = () => {
       {/* <!-- ===== Features End ===== --> */}
     </>
   );
-};
-
-export default Feature;
+}

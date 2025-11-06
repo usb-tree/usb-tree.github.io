@@ -5,21 +5,22 @@ import { useEffect, useState } from "react";
 
 import ThemeToggler from "./ThemeToggler";
 
-const Header = () => {
+export default function Header() {
   const [stickyMenu, setStickyMenu] = useState(false);
 
   // Sticky menu
-  const handleStickyMenu = () => {
+  function handleStickyMenu() {
     if (window.scrollY >= 80) {
       setStickyMenu(true);
     } else {
       setStickyMenu(false);
     }
-  };
+  }
 
-  useEffect(() => {
+  function addStickyMenuEventListener() {
     window.addEventListener("scroll", handleStickyMenu);
-  });
+  }
+  useEffect(addStickyMenuEventListener, []);
 
   return (
     <header
@@ -32,8 +33,8 @@ const Header = () => {
       <div className="max-w-c-1390 relative mx-auto flex flex-col items-center justify-between px-4 md:px-8 lg:flex-row 2xl:px-0">
         {/* Logo and Title - Left Side */}
         <Link href="/" className="flex items-center gap-3">
-          <img src="/images/logo/logo.svg" alt="logo" />
-          <h1 className="text-2xl font-bold text-black lg:text-3xl dark:text-white">
+          <img src="/images/logo/logo.svg" alt="logo" className="h-9" />
+          <h1 className="text-2xl font-bold text-black lg:text-4xl dark:text-white">
             USB Tree
           </h1>
         </Link>
@@ -52,8 +53,6 @@ const Header = () => {
       </div>
     </header>
   );
-};
+}
 
 // w-full delay-300
-
-export default Header;

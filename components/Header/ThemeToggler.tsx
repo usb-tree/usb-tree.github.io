@@ -1,12 +1,16 @@
 import { useTheme } from "next-themes";
 
-const ThemeToggler = () => {
+export default function ThemeToggler() {
   const { theme, setTheme } = useTheme();
+
+  function handleThemeToggle() {
+    setTheme(theme === "dark" ? "light" : "dark");
+  }
 
   return (
     <button
       aria-label="theme toggler"
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={handleThemeToggle}
       className="bg-gray-2 dark:bg-dark-bg absolute right-17 mr-1.5 flex cursor-pointer items-center justify-center rounded-full text-black lg:static dark:text-white"
     >
       <img
@@ -22,6 +26,4 @@ const ThemeToggler = () => {
       />
     </button>
   );
-};
-
-export default ThemeToggler;
+}

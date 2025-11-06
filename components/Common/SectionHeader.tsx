@@ -8,7 +8,11 @@ type HeaderInfo = {
   description: string;
 };
 
-const SectionHeader = ({ headerInfo }: { headerInfo: HeaderInfo }) => {
+export default function SectionHeader({
+  headerInfo,
+}: {
+  headerInfo: HeaderInfo;
+}) {
   const { title, subtitle, description } = headerInfo;
 
   return (
@@ -45,6 +49,4 @@ const SectionHeader = ({ headerInfo }: { headerInfo: HeaderInfo }) => {
       {/* <!-- Section Title End --> */}
     </>
   );
-};
-
-export default SectionHeader;
+}

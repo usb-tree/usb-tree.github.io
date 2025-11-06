@@ -2,7 +2,7 @@ import React from "react";
 import { Feature } from "@/types/feature";
 import { motion } from "framer-motion";
 
-const SingleFeature = ({ feature }: { feature: Feature }) => {
+export default function SingleFeature({ feature }: { feature: Feature }) {
   const { icon, title } = feature;
 
   return (
@@ -34,6 +34,4 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
       </motion.div>
     </>
   );
-};
-
-export default SingleFeature;
+}

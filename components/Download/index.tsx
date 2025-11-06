@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import SectionHeader from "@/components/Common/SectionHeader";
 
-const FunFact = () => {
+export default function FunFact() {
   return (
     <>
       {/* <!-- ===== Download Start ===== --> */}
@@ -101,6 +101,4 @@ const FunFact = () => {
       {/* <!-- ===== Funfact End ===== --> */}
     </>
   );
-};
-
-export default FunFact;
+}

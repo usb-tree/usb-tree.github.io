@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-const Footer = () => {
+export default function Footer() {
   return (
     <>
       <footer className="border-stroke dark:border-strokedark dark:bg-blacksection border-t bg-white">
@@ -158,6 +158,4 @@ const Footer = () => {
       </footer>
     </>
   );
-};
-
-export default Footer;
+}

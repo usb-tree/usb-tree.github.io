@@ -5,27 +5,33 @@ export default function ScrollToTop() {
 
   // Top: 0 takes us all the way back to the top of the page
   // Behavior: smooth keeps it smooth!
-  const scrollToTop = () => {
+  function scrollToTop() {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-  };
+  }
 
-  useEffect(() => {
+  function addScrollToTopEventListener() {
     // Button is displayed after scrolling for 500 pixels
-    const toggleVisibility = () => {
+    function toggleVisibility() {
       if (window.scrollY > 300) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
       }
-    };
+    }
+
+    function removeScrollToTopEventListener() {
+      window.removeEventListener("scroll", toggleVisibility);
+    }
 
     window.addEventListener("scroll", toggleVisibility);
 
-    return () => window.removeEventListener("scroll", toggleVisibility);
-  }, []);
+    return removeScrollToTopEventListener;
+  }
+
+  useEffect(addScrollToTopEventListener, []);
 
   return (
     <div className="fixed right-8 bottom-8 z-99">

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-const Hero = () => {
+export default function Hero() {
   return (
     <>
       <section className="overflow-hidden pt-35 pb-20 md:pt-40 xl:pt-46 xl:pb-25">
@@ -19,9 +19,11 @@ const Hero = () => {
                 USB Tree is a free and open-source utility for when you're
                 trying to see what USB devices are connected to which of your
                 USB ports, when you want to find out what speeds they're running
-                at, or you're diagnosing any USB device related issues. You'll
-                quickly be able to identify which devices are connected or
-                disconnected, and see if there's just too many USB devices
+                at, or you're diagnosing any USB device related issues.
+              </p>
+              <p>
+                You'll quickly be able to identify which devices are connected
+                or disconnected, and see if there's just too many USB devices
                 connected to a single USB root hub.
               </p>
             </div>
@@ -59,6 +61,4 @@ const Hero = () => {
       </section>
     </>
   );
-};
-
-export default Hero;
+}
