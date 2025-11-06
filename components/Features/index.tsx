@@ -3,7 +3,7 @@
 import React from "react";
 import featuresData from "./featuresData";
 import SingleFeature from "./SingleFeature";
-import SectionHeader from "../Common/SectionHeader";
+import SectionHeader from "@/components/Common/SectionHeader";
 
 function renderFeature(feature: any, key: number) {
   return <SingleFeature feature={feature} key={key} />;

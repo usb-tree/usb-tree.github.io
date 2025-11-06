@@ -34,7 +34,7 @@ export default function SectionHeader({
         whileInView="visible"
         transition={{ duration: 1, delay: 0.1 }}
         viewport={{ once: true }}
-        className="animate_top mx-auto text-center"
+        className="mx-auto text-center"
       >
         <div className="bg-zumthor dark:border-strokedark dark:bg-blacksection mb-4 inline-block rounded-full px-4.5 py-1.5 dark:border">
           <span className="text-sectiontitle font-medium text-black dark:text-white">

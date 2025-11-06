@@ -47,7 +47,7 @@ export default function FunFact() {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.5 }}
               viewport={{ once: true }}
-              className="animate_top text-center"
+              className="text-center"
             >
               <div className="flex flex-col text-start">
                 <h3 className="xl:text-sectiontitle3 mb-2.5 text-3xl font-bold text-black dark:text-white">
@@ -86,7 +86,6 @@ export default function FunFact() {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.7 }}
               viewport={{ once: true }}
-              className="animate_top"
             >
               <h3 className="xl:text-sectiontitle3 mb-2.5 text-3xl font-bold text-black dark:text-white">
                 Packages for your OS

@@ -34,7 +34,6 @@ export default function Footer() {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_top"
             >
               <p>&copy; {new Date().getFullYear()} Alastair Ozmond</p>
             </motion.div>
@@ -55,7 +54,6 @@ export default function Footer() {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_top"
             >
               <ul className="flex items-center gap-5">
                 <li>

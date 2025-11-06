@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function ErrorPage() {
   return (
     <section className="overflow-hidden pt-45 pb-25 lg:pt-50 lg:pb-32.5 xl:pt-55 xl:pb-37.5">
-      <div className="animate_top mx-auto max-w-[518px] text-center">
+      <div className="mx-auto max-w-[518px] text-center">
         <img src="/images/shape/404.svg" alt="404" className="mx-auto mb-7.5" />
 
         <h2 className="mb-5 text-2xl font-semibold text-black md:text-4xl dark:text-white">

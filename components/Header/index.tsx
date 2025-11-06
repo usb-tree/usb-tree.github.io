@@ -49,8 +49,6 @@ export default function Header() {
             <img
               src="/images/icon/github.svg"
               alt="github logo"
-              width="21"
-              height="21"
               className="dark:invert"
             />
           </a>
