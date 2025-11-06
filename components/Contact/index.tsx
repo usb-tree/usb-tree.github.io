@@ -59,13 +59,16 @@ export default function Contact() {
               </p>
               <p>I am currently open to new work opportunities.</p>
 
-              <h3 className="py-5">Skills</h3>
+              <h3 className="py-5">I'm skilled in</h3>
               <p>
                 Computer Computer Computer Computer Computer Computer Computer
                 Computer Computer Computer Computer Computer Computer Computer
                 Computer Computer Computer Computer Computer Computer
                 Computer{" "}
               </p>
+              <div className="mt-10 bg-cyan-200 p-3 text-center text-black">
+                Now accepting applications for employers
+              </div>
             </motion.div>
 
             <motion.div
@@ -86,12 +89,11 @@ export default function Contact() {
               viewport={{ once: true }}
               className="animate_top w-full md:w-2/5 md:p-7.5 lg:w-[26%] xl:pt-15"
             >
-              <h2 className="xl:text-sectiontitle2 mb-12.5 text-3xl font-semibold text-black dark:text-white">
+              <h2 className="text-2xl font-semibold text-black dark:text-white">
                 About me
               </h2>
-
-              <div className="5 mb-7">
-                <h3 className="text-metatitle3 mb-4 font-medium text-black dark:text-white">
+              <div className="mb-7">
+                <h3 className="mb-4 font-medium whitespace-nowrap text-black dark:text-white">
                   Junior full-stack developer
                 </h3>
                 <div className="flex w-full flex-col text-left">
@@ -102,9 +104,6 @@ export default function Contact() {
                 </div>
               </div>
             </motion.div>
-          </div>
-          <div className="m-3 bg-blue-300 p-3 text-black">
-            Now accepting applications for employers
           </div>
         </div>
       </section>
