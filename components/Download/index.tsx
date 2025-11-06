@@ -49,15 +49,25 @@ export default function FunFact() {
               viewport={{ once: true }}
               className="animate_top text-center"
             >
-              <div className={"flex flex-col text-start"}>
+              <div className="flex flex-col text-start">
                 <h3 className="xl:text-sectiontitle3 mb-2.5 text-3xl font-bold text-black dark:text-white">
                   Direct Download
                 </h3>
-                <p className="lg:text-para2 text-lg">DROP DOWN MENU</p>
-                <button className="lg:text-para2 text-lg">
-                  DOWNLOAD BUTTON
+                <select className="lg:text-para2 mb-4 w-64 rounded-lg border border-gray-300 bg-white px-4 py-2 text-lg focus:border-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-white">
+                  <option value="">Select your OS</option>
+                  <option value="windows">Windows</option>
+                  <option value="linux">Linux</option>
+                </select>
+                <button className="lg:text-para2 w-64 rounded-lg bg-blue-600 px-6 py-3 text-lg font-semibold text-white transition-all hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none dark:bg-blue-500 dark:hover:bg-blue-600">
+                  Download
                 </button>
-                <a href="#">View on GitHub</a>
+
+                <a
+                  href="https://github.com/AOzmond/usb-tree"
+                  className="lg:text-para2 mt-4 inline-block text-lg text-blue-600 hover:text-blue-700 hover:underline dark:text-blue-400 dark:hover:text-blue-300"
+                >
+                  View on GitHub
+                </a>
               </div>
             </motion.div>
             <motion.div
@@ -76,7 +86,7 @@ export default function FunFact() {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.7 }}
               viewport={{ once: true }}
-              className="animate_top text-center"
+              className="animate_top"
             >
               <h3 className="xl:text-sectiontitle3 mb-2.5 text-3xl font-bold text-black dark:text-white">
                 Packages for your OS
