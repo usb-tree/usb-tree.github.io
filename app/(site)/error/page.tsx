@@ -2,10 +2,10 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Error Page - Solid SaaS Boilerplate",
+  title: "Error Page - USB Tree",
 
   // other metadata
-  description: "This is Error page for Solid Pro",
+  description: "This is Error page for USB Tree",
 };
 
 export default function ErrorPage() {
