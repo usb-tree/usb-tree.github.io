@@ -4,9 +4,19 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import SectionHeader from "@/components/Common/SectionHeader";
+import { useEffect } from "react";
 
 export default function FunFact() {
   const [selectedOS, setSelectedOS] = useState("");
+
+  useEffect(() => {
+    const userAgent = navigator.userAgent;
+    if (userAgent.includes("Win")) {
+      setSelectedOS("windows");
+    } else if (userAgent.includes("Linux")) {
+      setSelectedOS("linux");
+    }
+  }, []);
 
   const downloadUrls: Record<string, string> = {
     windows:

@@ -19,11 +19,7 @@ export default function RootLayout({
     // suppressHydrationWarning is for dark mode support (next-themes).
     <html lang="en" suppressHydrationWarning>
       <body className={`dark:bg-black ${inter.className}`}>
-        <ThemeProvider
-          enableSystem={false}
-          attribute="class"
-          defaultTheme="light"
-        >
+        <ThemeProvider attribute="class">
           <Lines />
           <Header />
           {children}
