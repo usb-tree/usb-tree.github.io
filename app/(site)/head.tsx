@@ -1,9 +1,9 @@
 export default function Head() {
   return (
     <>
-      <title> Solid | Next.js Template for Startup and SaaS</title>
+      <title> USB Tree - The USB device tree viewer and monitor.</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <meta name="description" content="Built with Next.js and TypeScript" />
+      <meta name="description" content="This is the homepage for USB Tree" />
       <link rel="icon" href="/images/favicon.ico" />
     </>
   );

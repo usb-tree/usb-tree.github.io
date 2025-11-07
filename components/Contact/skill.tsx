@@ -7,7 +7,7 @@ interface SkillBoxProps {
 
 export const SkillBox: React.FC<SkillBoxProps> = ({ word }) => {
   return (
-    <span className="mr-2 mb-2 inline-block rounded-md bg-blue-700 px-3 py-1 text-sm font-medium text-white">
+    <span className="skill text-body mr-2 mb-2 inline-block rounded-md px-3 py-1 text-sm font-medium">
       {word}
     </span>
   );

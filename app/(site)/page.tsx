@@ -5,10 +5,10 @@ import Download from "@/components/Download";
 import Contact from "@/components/Contact";
 
 export const metadata: Metadata = {
-  title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
+  title: "USB Tree - The USB device tree viewer and monitor.",
 
   // other metadata
-  description: "This is Home for Solid Pro",
+  description: "This is the homepage for USB Tree",
 };
 
 export default function Home() {

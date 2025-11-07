@@ -15,13 +15,13 @@ export default function Hero() {
               <h1 className="xl:text-hero mb-5 pr-16 text-3xl font-bold text-black dark:text-white">
                 The USB buddy you've always wanted
               </h1>
-              <p>
+              <p className="text-body">
                 USB Tree is a free and open-source utility for when you're
                 trying to see what USB devices are connected to which of your
                 USB ports, when you want to find out what speeds they're running
                 at, or you're diagnosing any USB device related issues.
               </p>
-              <p className="mt-4">
+              <p className="text-body mt-4">
                 You'll quickly be able to identify which devices are connected
                 or disconnected, and see if there's just too many USB devices
                 connected to a single USB root hub.

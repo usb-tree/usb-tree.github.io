@@ -35,13 +35,15 @@ export default function Contact() {
 
           <div className="flex flex-col-reverse flex-wrap gap-8 md:flex-row md:flex-nowrap md:justify-between xl:gap-20">
             <div className="shadow-solid-8 dark:border-strokedark w-full rounded-lg bg-white p-7.5 md:w-3/5 lg:w-3/4 xl:p-15 dark:border dark:bg-black">
-              <p>
+              <p className="text-body">
                 I'm Alastair, Software Engineer from Glasgow,Scotland, Currently
                 living in Oregon, USA.
               </p>
-              <p>I am currently open to new work opportunities.</p>
+              <p className="text-body">
+                I am currently open to new work opportunities.
+              </p>
 
-              <h3 className="py-5">I'm skilled in</h3>
+              <h3 className="text-body py-5">I'm skilled in</h3>
               <div>
                 {skillsData.map((skill, index) => (
                   <Skill key={index} word={skill.word} />
@@ -52,7 +54,7 @@ export default function Contact() {
                 rel="noopener"
                 target="_blank"
               >
-                <div className="mt-10 bg-cyan-200 p-3 text-center text-black hover:bg-cyan-100">
+                <div className="highlight mt-10 p-3 text-center text-black">
                   Now accepting applications for employers
                 </div>
               </a>
