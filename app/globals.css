@@ -169,3 +169,24 @@ pre {
     background-color: var(--color-blackho);
   }
 }
+
+.footer-link {
+  text-decoration: underline;
+  color: var(--color-black);
+
+  &:hover {
+    color: var(--color-primary);
+  }
+  &:is(.dark *) {
+    color: var(--color-white);
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}
+
+.img-svg-link {
+  &:hover {
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+  }
+}

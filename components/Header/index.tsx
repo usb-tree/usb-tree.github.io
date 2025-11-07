@@ -47,12 +47,12 @@ export default function Header() {
             rel="noopener"
             target="_blank"
             href="https://github.com/AOzmond/usb-tree"
-            className="transition-colors hover:opacity-70"
+            className=""
           >
             <img
               src="/images/icon/github.svg"
               alt="github logo"
-              className="dark:invert"
+              className="img-svg-link dark:invert"
             />
           </a>
         </div>

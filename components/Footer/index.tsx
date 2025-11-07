@@ -14,6 +14,7 @@ export default function Footer() {
                 href="https://github.com/AOzmond/usb-tree"
                 rel="noopener"
                 target="_blank"
+                className="footer-link"
               >
                 USB Tree GitHub
               </a>
@@ -21,6 +22,7 @@ export default function Footer() {
                 href="https://github.com/usb-tree/usb-tree.github.io"
                 rel="noopener"
                 target="_blank"
+                className="footer-link"
               >
                 Website Source
               </a>
@@ -77,7 +79,7 @@ export default function Footer() {
                     <img
                       src="/images/icon/linkedin.svg"
                       alt="Linkedin logo"
-                      className="w-6 dark:invert"
+                      className="img-svg-link w-6 dark:invert"
                     />
                   </a>
                 </li>
@@ -90,7 +92,7 @@ export default function Footer() {
                     <img
                       src="/images/icon/github.svg"
                       alt="Github logo"
-                      className="w-6 dark:invert"
+                      className="img-svg-link w-6 dark:invert"
                     />
                   </a>
                 </li>
@@ -103,7 +105,7 @@ export default function Footer() {
                     <img
                       src="/images/icon/bluesky.svg"
                       alt="Bluesky logo"
-                      className="w-6 dark:invert"
+                      className="img-svg-link w-6 dark:invert"
                     />
                   </a>
                 </li>
@@ -116,7 +118,7 @@ export default function Footer() {
                     <img
                       src="/images/icon/devdotto.svg"
                       alt="dev.to logo"
-                      className="w-6 dark:invert"
+                      className="img-svg-link w-6 dark:invert"
                     />
                   </a>
                 </li>
