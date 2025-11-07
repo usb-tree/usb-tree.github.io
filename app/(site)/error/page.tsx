@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Error Page - Solid SaaS Boilerplate",
@@ -21,7 +22,7 @@ export default function ErrorPage() {
           does not exist.
         </p>
 
-        <a
+        <Link
           href="/"
           className="hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out"
         >
@@ -37,7 +38,7 @@ export default function ErrorPage() {
               fill=""
             />
           </svg>
-        </a>
+        </Link>
       </div>
     </section>
   );
