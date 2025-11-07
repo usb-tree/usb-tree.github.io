@@ -4,8 +4,6 @@ import { motion } from "framer-motion";
 
 type HeaderInfo = {
   title: string;
-  subtitle: string;
-  description: string;
 };
 
 export default function SectionHeader({
@@ -13,7 +11,7 @@ export default function SectionHeader({
 }: {
   headerInfo: HeaderInfo;
 }) {
-  const { title, subtitle, description } = headerInfo;
+  const { title } = headerInfo;
 
   return (
     <>
@@ -36,15 +34,11 @@ export default function SectionHeader({
         viewport={{ once: true }}
         className="mx-auto text-center"
       >
-        <div className="bg-zumthor dark:border-strokedark dark:bg-blacksection mb-4 inline-block rounded-full px-4.5 py-1.5 dark:border">
+        <div className="bg-zumthor dark:border-strokedark dark:bg-blacksection mb-10 inline-block rounded-full px-4.5 py-1.5 dark:border">
           <span className="text-sectiontitle font-medium text-black dark:text-white">
             {title}
           </span>
         </div>
-        <h2 className="xl:text-sectiontitle3 mx-auto mb-4 text-3xl font-bold text-black md:w-4/5 xl:w-1/2 dark:text-white">
-          {subtitle}
-        </h2>
-        <p className="mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%]">{description}</p>
       </motion.div>
       {/* <!-- Section Title End --> */}
     </>

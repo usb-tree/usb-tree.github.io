@@ -47,7 +47,6 @@ export default function Header() {
             rel="noopener"
             target="_blank"
             href="https://github.com/AOzmond/usb-tree"
-            className=""
           >
             <img
               src="/images/icon/github.svg"

@@ -12,8 +12,6 @@ export default function Contact() {
         <SectionHeader
           headerInfo={{
             title: "Who made this",
-            subtitle: "",
-            description: ``,
           }}
         />
         <div className="max-w-c-1390 relative mx-auto px-7.5 pt-10 lg:px-15 lg:pt-15 xl:px-20 xl:pt-20">
@@ -78,7 +76,7 @@ export default function Contact() {
                   >
                     <img
                       src="https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?logo=linkedin-white&logoColor=fff"
-                      alt=""
+                      alt="Linkedin logo"
                     />
                   </a>
                   <a
@@ -89,7 +87,7 @@ export default function Contact() {
                   >
                     <img
                       src="https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white"
-                      alt="GitHub"
+                      alt="GitHub logo"
                       className="w-auto"
                     />
                   </a>
@@ -101,7 +99,7 @@ export default function Contact() {
                   >
                     <img
                       src="https://img.shields.io/badge/Bluesky-0285FF?logo=bluesky&logoColor=fff"
-                      alt="Bluesky"
+                      alt="Bluesky logo"
                       className="w-auto"
                     />
                   </a>
@@ -113,7 +111,7 @@ export default function Contact() {
                   >
                     <img
                       src="https://img.shields.io/badge/Dev.to-0A0A0A?logo=devdotto&logoColor=white"
-                      alt="Dev.to"
+                      alt="Dev.to logo"
                       className="w-auto"
                     />
                   </a>

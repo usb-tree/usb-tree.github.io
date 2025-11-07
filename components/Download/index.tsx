@@ -32,8 +32,6 @@ export default function FunFact() {
         <SectionHeader
           headerInfo={{
             title: "Download USB Tree for Desktop",
-            subtitle: "",
-            description: ``,
           }}
         />
         <div className="max-w-c-1390 dark:bg-blacksection dark:stroke-strokedark relative z-1 mx-auto rounded-lg bg-linear-to-t from-[#F8F9FF] to-[#DEE7FF] py-22.5 xl:py-27.5 dark:bg-linear-to-t dark:from-transparent dark:to-transparent">

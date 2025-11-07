@@ -19,8 +19,6 @@ export default function Feature() {
           <SectionHeader
             headerInfo={{
               title: "Features",
-              subtitle: "",
-              description: ``,
             }}
           />
           {/* <!-- Section Title End --> */}
