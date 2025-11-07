@@ -54,7 +54,7 @@ export default function Contact() {
                 rel="noopener"
                 target="_blank"
               >
-                <div className="highlight mt-10 p-3 text-center text-black">
+                <div className="highlight mt-10 rounded-lg p-3 text-center text-black">
                   Now accepting applications for employers
                 </div>
               </a>

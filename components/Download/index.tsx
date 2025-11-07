@@ -1,11 +1,20 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import SectionHeader from "@/components/Common/SectionHeader";
 
 export default function FunFact() {
+  const [selectedOS, setSelectedOS] = useState("");
+
+  const downloadUrls: Record<string, string> = {
+    windows:
+      "https://github.com/AOzmond/usb-tree/releases/latest/download/usb-tree-windows-amd64.zip",
+    linux:
+      "https://github.com/AOzmond/usb-tree/releases/latest/download/usb-tree-linux-amd64.tar.gz",
+  };
+
   return (
     <>
       {/* <!-- ===== Download Start ===== --> */}
@@ -53,14 +62,32 @@ export default function FunFact() {
                 <h3 className="xl:text-sectiontitle3 mb-2.5 text-3xl font-bold text-black dark:text-white">
                   Direct Download
                 </h3>
-                <select className="lg:text-para2 mb-4 w-64 rounded-lg border border-gray-300 bg-white px-4 py-2 text-lg focus:border-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-white">
+                <select
+                  className="lg:text-para2 mb-4 w-64 rounded-lg border border-gray-300 bg-white px-4 py-2 text-lg focus:border-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-white"
+                  value={selectedOS}
+                  onChange={(e) => setSelectedOS(e.target.value)}
+                >
                   <option value="">Select your OS</option>
-                  <option value="windows">Windows</option>
-                  <option value="linux">Linux</option>
+                  <option value="windows">Windows x64 (.zip)</option>
+                  <option value="linux">Linux x64 (.tar.gz)</option>
                 </select>
-                <button className="lg:text-para2 w-64 rounded-lg bg-blue-600 px-6 py-3 text-lg font-semibold text-white transition-all hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none dark:bg-blue-500 dark:hover:bg-blue-600">
+                <a
+                  className={`lg:text-para2 w-64 rounded-lg bg-blue-600 px-6 py-3 text-center text-lg font-semibold text-white transition-all focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none dark:bg-blue-500 ${
+                    selectedOS
+                      ? "hover:bg-blue-700 dark:hover:bg-blue-600"
+                      : "cursor-not-allowed opacity-50"
+                  }`}
+                  href={selectedOS ? downloadUrls[selectedOS] : "#"}
+                  target="_blank"
+                  rel="noopener"
+                  onClick={(e) => {
+                    if (!selectedOS) {
+                      e.preventDefault(); // Prevent navigation if no OS is selected
+                    }
+                  }}
+                >
                   Download
-                </button>
+                </a>
 
                 <a
                   rel="noopener"
