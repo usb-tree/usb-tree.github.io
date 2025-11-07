@@ -30,7 +30,7 @@ export default function Header() {
           : ""
       }`}
     >
-      <div className="max-w-c-1390 relative mx-auto flex flex-col items-center justify-between px-4 md:px-8 lg:flex-row 2xl:px-0">
+      <div className="max-w-c-1390 relative mx-auto flex flex-row items-center justify-between px-4 md:px-8 2xl:px-0">
         {/* Logo and Title - Left Side */}
         <Link href="/" className="flex items-center gap-3">
           <img
