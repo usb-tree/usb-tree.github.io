@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import SectionHeader from "@/components/Common/SectionHeader";
 import { useEffect } from "react";
 
-export default function FunFact() {
+export default function Download() {
   const [selectedOS, setSelectedOS] = useState("");
 
   useEffect(() => {
@@ -147,7 +147,7 @@ export default function FunFact() {
           </div>
         </div>
       </section>
-      {/* <!-- ===== Funfact End ===== --> */}
+      {/* <!-- ===== Download End ===== --> */}
     </>
   );
 }
