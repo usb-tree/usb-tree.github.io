@@ -8,7 +8,8 @@ export const metadata: Metadata = {
   title: "USB Tree - The USB device tree viewer and monitor.",
 
   // other metadata
-  description: "This is the homepage for USB Tree",
+  description:
+    "USB Tree - A free, open-source desktop app for Windows and Linux. View connected USB devices in a tree structure and monitor real-time connection changes.",
 };
 
 export default function Home() {
