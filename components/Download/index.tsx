@@ -67,15 +67,18 @@ export default function FunFact() {
               className="text-center"
             >
               <div className="flex flex-col text-start">
-                <h3 className="xl:text-sectiontitle3 mb-2.5 text-3xl font-bold text-black dark:text-white">
+                <h2 className="xl:text-sectiontitle3 mb-2.5 text-3xl font-bold text-black dark:text-white">
                   Direct Download
-                </h3>
+                </h2>
                 <select
-                  className="lg:text-para2 mb-4 w-64 rounded-lg border border-gray-300 bg-white px-4 py-2 text-lg focus:border-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-white"
+                  className="lg:text-para2 mb-4 w-64 rounded-lg border border-gray-300 bg-white px-4 py-2 text-lg text-black focus:border-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-white"
                   value={selectedOS}
                   onChange={(e) => setSelectedOS(e.target.value)}
+                  aria-label="Select your Operating system"
                 >
-                  <option value="">Select your OS</option>
+                  <option value="Select your Operating system">
+                    Select your OS
+                  </option>
                   <option value="windows">Windows x64 (.zip)</option>
                   <option value="linux">Linux x64 (.tar.gz)</option>
                 </select>

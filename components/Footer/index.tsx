@@ -49,7 +49,9 @@ export default function Footer() {
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <p>&copy; {new Date().getFullYear()} Alastair Ozmond</p>
+              <p className="text-body">
+                &copy; {new Date().getFullYear()} Alastair Ozmond
+              </p>
             </motion.div>
 
             <motion.div
