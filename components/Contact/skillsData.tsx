@@ -12,6 +12,9 @@ const fileContents = readFileSync(
   "utf8",
 );
 
-const data = yaml.load(fileContents) as { skills: Skill[] };
+const data = yaml.load(fileContents) as { skills: (string | Skill)[] };
 
-export const skillsData: Skill[] = data.skills;
+// Convert strings to Skill objects
+export const skillsData: Skill[] = data.skills.map((skill) =>
+  typeof skill === "string" ? { word: skill } : skill,
+);
