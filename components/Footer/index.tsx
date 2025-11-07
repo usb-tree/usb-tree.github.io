@@ -10,8 +10,20 @@ export default function Footer() {
           {/* <!-- Footer Top --> */}
           <div className="py-20">
             <div className="flex flex-wrap justify-center gap-8">
-              <a>USB Tree GitHub</a>
-              <a href="#">Website Source</a>
+              <a
+                href="https://github.com/AOzmond/usb-tree"
+                rel="noopener"
+                target="_blank"
+              >
+                USB Tree GitHub
+              </a>
+              <a
+                href="https://github.com/usb-tree/usb-tree.github.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Website Source
+              </a>
             </div>
           </div>
           {/* <!-- Footer Top --> */}
@@ -57,7 +69,11 @@ export default function Footer() {
             >
               <ul className="flex items-center gap-5">
                 <li>
-                  <a href="www.linkedin.com/in/alastair-ozmond-108512179">
+                  <a
+                    rel="noopener"
+                    target="_blank"
+                    href="www.linkedin.com/in/alastair-ozmond-108512179"
+                  >
                     <img
                       src="/images/icon/linkedin.svg"
                       alt="Linkedin logo"
@@ -66,7 +82,11 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/AOzmond/usb-tree">
+                  <a
+                    rel="noopener"
+                    target="_blank"
+                    href="https://github.com/AOzmond/usb-tree"
+                  >
                     <img
                       src="/images/icon/github.svg"
                       alt="Github logo"
@@ -75,7 +95,11 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://bsky.app/profile/alastair-ozmond.bsky.social">
+                  <a
+                    rel="noopener"
+                    target="_blank"
+                    href="https://bsky.app/profile/alastair-ozmond.bsky.social"
+                  >
                     <img
                       src="/images/icon/bluesky.svg"
                       alt="Bluesky logo"
@@ -84,7 +108,11 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://dev.to/alastair_ozmond_347af2033">
+                  <a
+                    rel="noopener"
+                    target="_blank"
+                    href="https://dev.to/alastair_ozmond_347af2033"
+                  >
                     <img
                       src="/images/icon/devdotto.svg"
                       alt="dev.to logo"

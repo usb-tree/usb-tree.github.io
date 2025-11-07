@@ -63,6 +63,8 @@ export default function FunFact() {
                 </button>
 
                 <a
+                  rel="noopener"
+                  target="_blank"
                   href="https://github.com/AOzmond/usb-tree"
                   className="lg:text-para2 mt-4 inline-block text-lg text-blue-600 hover:text-blue-700 hover:underline dark:text-blue-400 dark:hover:text-blue-300"
                 >

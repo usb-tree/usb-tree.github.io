@@ -43,6 +43,8 @@ export default function Header() {
           <ThemeToggler />
 
           <a
+            rel="noopener"
+            target="_blank"
             href="https://github.com/AOzmond/usb-tree"
             className="transition-colors hover:opacity-70"
           >

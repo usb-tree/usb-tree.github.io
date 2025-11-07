@@ -1,9 +1,8 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import SectionHeader from "@/components/Common/SectionHeader";
+import Skill from "./skill";
+import { skillsData } from "./skillsData";
 
 export default function Contact() {
   return (
@@ -35,60 +34,31 @@ export default function Contact() {
           </div>
 
           <div className="flex flex-col-reverse flex-wrap gap-8 md:flex-row md:flex-nowrap md:justify-between xl:gap-20">
-            <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="shadow-solid-8 dark:border-strokedark w-full rounded-lg bg-white p-7.5 md:w-3/5 lg:w-3/4 xl:p-15 dark:border dark:bg-black"
-            >
+            <div className="shadow-solid-8 dark:border-strokedark w-full rounded-lg bg-white p-7.5 md:w-3/5 lg:w-3/4 xl:p-15 dark:border dark:bg-black">
               <p>
-                I'm Alastair, Software Engineer from scottish flag
-                Glasgow,Scotland, Currently living in usa flag Oregon, USA.
+                I'm Alastair, Software Engineer from Glasgow,Scotland, Currently
+                living in Oregon, USA.
               </p>
               <p>I am currently open to new work opportunities.</p>
 
               <h3 className="py-5">I'm skilled in</h3>
-              <p>
-                Computer Computer Computer Computer Computer Computer Computer
-                Computer Computer Computer Computer Computer Computer Computer
-                Computer Computer Computer Computer Computer Computer
-                Computer{" "}
-              </p>
-              <div className="mt-10 bg-cyan-200 p-3 text-center text-black">
-                Now accepting applications for employers
+              <div>
+                {skillsData.map((skill, index) => (
+                  <Skill key={index} word={skill.word} />
+                ))}
               </div>
-            </motion.div>
+              <a
+                href="http://www.linkedin.com/in/alastair-ozmond-108512179"
+                rel="noopener"
+                target="_blank"
+              >
+                <div className="mt-10 bg-cyan-200 p-3 text-center text-black hover:bg-cyan-100">
+                  Now accepting applications for employers
+                </div>
+              </a>
+            </div>
 
-            <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 2, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="w-full md:w-2/5 md:p-7.5 lg:w-[26%] xl:pt-15"
-            >
+            <div className="w-full md:w-2/5 md:p-7.5 lg:w-[26%] xl:pt-15">
               <h2 className="text-2xl font-semibold text-black dark:text-white">
                 About me
               </h2>
@@ -96,14 +66,58 @@ export default function Contact() {
                 <h3 className="mb-4 font-medium whitespace-nowrap text-black dark:text-white">
                   Junior full-stack developer
                 </h3>
-                <div className="flex w-full flex-col text-left">
-                  <button className="w-full text-left">Linkedin</button>
-                  <button className="w-full text-left">GitHub</button>
-                  <button className="w-full text-left">Bluesky</button>
-                  <button className="w-full text-left">Dev.to</button>
+
+                <div className="flex flex-col gap-2">
+                  <a
+                    href="https://www.linkedin.com/in/alastair-ozmond-108512179/"
+                    rel="noopener"
+                    target="_blank"
+                    className="flex items-center"
+                  >
+                    <img
+                      src="https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?logo=linkedin-white&logoColor=fff"
+                      alt=""
+                    />
+                  </a>
+                  <a
+                    href="https://github.com/AOzmond"
+                    rel="noopener"
+                    target="_blank"
+                    className="flex items-center"
+                  >
+                    <img
+                      src="https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white"
+                      alt="GitHub"
+                      className="w-auto"
+                    />
+                  </a>
+                  <a
+                    href="https://bsky.app/profile/alastair-ozmond.bsky.social"
+                    rel="noopener"
+                    target="_blank"
+                    className="flex items-center"
+                  >
+                    <img
+                      src="https://img.shields.io/badge/Bluesky-0285FF?logo=bluesky&logoColor=fff"
+                      alt="Bluesky"
+                      className="w-auto"
+                    />
+                  </a>
+                  <a
+                    href="https://dev.to/alastair_ozmond_347af2033"
+                    rel="noopener"
+                    target="_blank"
+                    className="flex"
+                  >
+                    <img
+                      src="https://img.shields.io/badge/Dev.to-0A0A0A?logo=devdotto&logoColor=white"
+                      alt="Dev.to"
+                      className="w-auto"
+                    />
+                  </a>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
