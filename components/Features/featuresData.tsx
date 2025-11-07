@@ -2,19 +2,19 @@ import { Feature } from "@/types/feature";
 
 const featuresData: Feature[] = [
   {
-    icon: "/images/icon/icon-01.svg",
+    icon: "/images/features/multi-os.png",
     title: "Cross-platform support for Windows and Linux",
   },
   {
-    icon: "/images/icon/icon-02.svg",
+    icon: "/images/features/device-tree.png",
     title: "Tree of USB devices",
   },
   {
-    icon: "/images/icon/icon-03.svg",
+    icon: "/images/features/logging.png",
     title: "Monitor for changes",
   },
   {
-    icon: "/images/icon/icon-04.svg",
+    icon: "/images/features/lightmode.png",
     title: "Dark and Light Mode",
   },
 ];
