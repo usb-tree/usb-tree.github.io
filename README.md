@@ -2,4 +2,4 @@
 
 Project Website for usb-tree
 
-[Built using the Solid-Next.js template.](https://nextjstemplates.com/templates/solid)
+Built using the [Solid-Next.js template](https://nextjstemplates.com/templates/solid).

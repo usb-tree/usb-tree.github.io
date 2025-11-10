@@ -76,7 +76,7 @@ export default function Footer() {
                   <a
                     rel="noopener"
                     target="_blank"
-                    href="www.linkedin.com/in/alastair-ozmond-108512179"
+                    href="https://www.linkedin.com/in/alastair-ozmond-108512179"
                   >
                     <img
                       src="/images/icon/linkedin.svg"

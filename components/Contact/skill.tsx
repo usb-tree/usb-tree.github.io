@@ -1,14 +1,13 @@
 import React from "react";
 
 interface SkillBoxProps {
-  word: string;
-  color?: string;
+  skill: string;
 }
 
-export const SkillBox: React.FC<SkillBoxProps> = ({ word }) => {
+export const SkillBox: React.FC<SkillBoxProps> = ({ skill }) => {
   return (
     <span className="skill text-body mr-2 mb-2 inline-block rounded-md px-3 py-1 text-sm font-medium">
-      {word}
+      {skill}
     </span>
   );
 };

@@ -34,8 +34,8 @@ export default function Contact() {
           <div className="flex flex-col-reverse flex-wrap gap-8 md:flex-row md:flex-nowrap md:justify-between xl:gap-20">
             <div className="shadow-solid-8 dark:border-strokedark w-full rounded-lg bg-white p-7.5 md:w-3/5 lg:w-3/4 xl:p-15 dark:border dark:bg-black">
               <p className="text-body">
-                I'm Alastair, Software Engineer from Glasgow,Scotland, Currently
-                living in Oregon, USA.
+                I'm Alastair, Software Engineer from Glasgow, Scotland,
+                currently living in Oregon, USA.
               </p>
               <p className="text-body">
                 I am currently open to new work opportunities.
@@ -43,8 +43,8 @@ export default function Contact() {
 
               <h3 className="text-body py-5">I'm skilled in</h3>
               <div>
-                {skillsData.map((skill, index) => (
-                  <Skill key={index} word={skill.word} />
+                {skillsData.map((skillName, index) => (
+                  <Skill key={index} skill={skillName} />
                 ))}
               </div>
               <a
@@ -76,7 +76,7 @@ export default function Contact() {
                   >
                     <img
                       src="https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?logo=linkedin-white&logoColor=fff"
-                      alt="Linkedin logo"
+                      alt="LinkedIn"
                     />
                   </a>
                   <a
@@ -87,7 +87,7 @@ export default function Contact() {
                   >
                     <img
                       src="https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white"
-                      alt="GitHub logo"
+                      alt="GitHub"
                       className="w-auto"
                     />
                   </a>
@@ -99,7 +99,7 @@ export default function Contact() {
                   >
                     <img
                       src="https://img.shields.io/badge/Bluesky-0285FF?logo=bluesky&logoColor=fff"
-                      alt="Bluesky logo"
+                      alt="Bluesky"
                       className="w-auto"
                     />
                   </a>
@@ -111,7 +111,7 @@ export default function Contact() {
                   >
                     <img
                       src="https://img.shields.io/badge/Dev.to-0A0A0A?logo=devdotto&logoColor=white"
-                      alt="Dev.to logo"
+                      alt="Dev.to"
                       className="w-auto"
                     />
                   </a>

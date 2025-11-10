@@ -74,11 +74,9 @@ export default function Download() {
                   className="lg:text-para2 mb-4 w-64 rounded-lg border border-gray-300 bg-white px-4 py-2 text-lg text-black focus:border-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-white"
                   value={selectedOS}
                   onChange={(e) => setSelectedOS(e.target.value)}
-                  aria-label="Select your Operating system"
+                  aria-label="Select your Operating System"
                 >
-                  <option value="Select your Operating system">
-                    Select your OS
-                  </option>
+                  <option value="">Select your OS</option>
                   <option value="windows">Windows x64 (.zip)</option>
                   <option value="linux">Linux x64 (.tar.gz)</option>
                 </select>
@@ -103,7 +101,7 @@ export default function Download() {
                 <a
                   rel="noopener"
                   target="_blank"
-                  href="https://github.com/AOzmond/usb-tree"
+                  href="https://github.com/AOzmond/usb-tree/releases/latest"
                   className="lg:text-para2 mt-4 inline-block text-lg text-blue-600 hover:text-blue-700 hover:underline dark:text-blue-400 dark:hover:text-blue-300"
                 >
                   View on GitHub
@@ -136,12 +134,12 @@ export default function Download() {
                   <code className="block font-mono">usb-tree-app-bin</code>
                   <code className="block font-mono">usb-tree-app</code>
                 </div>
-                <p>Windows Package Manager</p>
-                <div className="rounded-lg bg-black/90 p-4 text-white">
-                  <code className="block font-mono">
-                    winget install usb-tree-app
-                  </code>
-                </div>
+                {/*<p>Windows Package Manager</p>*/}
+                {/*<div className="rounded-lg bg-black/90 p-4 text-white">*/}
+                {/*  <code className="block font-mono">*/}
+                {/*    winget install usb-tree-app*/}
+                {/*  </code>*/}
+                {/*</div>*/}
               </div>
             </motion.div>
           </div>
