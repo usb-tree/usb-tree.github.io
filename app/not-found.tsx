@@ -1,14 +1,6 @@
-import { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Error Page - USB Tree",
-
-  // other metadata
-  description: "This is Error page for USB Tree",
-};
-
-export default function ErrorPage() {
+export default function NotFound() {
   return (
     <section className="overflow-hidden pt-45 pb-25 lg:pt-50 lg:pb-32.5 xl:pt-55 xl:pb-37.5">
       <div className="mx-auto max-w-[518px] text-center">
