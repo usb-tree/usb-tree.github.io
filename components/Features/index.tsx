@@ -2,14 +2,14 @@
 
 import React from "react";
 import featuresData from "./featuresData";
-import SingleFeature from "./SingleFeature";
+import Feature from "./Feature";
 import SectionHeader from "@/components/Common/SectionHeader";
 
 function renderFeature(feature: any, key: number) {
-  return <SingleFeature feature={feature} key={key} />;
+  return <Feature feature={feature} key={key} />;
 }
 
-export default function Feature() {
+export default function Features() {
   return (
     <>
       {/* <!-- ===== Features Start ===== --> */}

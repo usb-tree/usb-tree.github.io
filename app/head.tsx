@@ -1,7 +1,9 @@
 export default function Head() {
   return (
     <>
-      <title>USB Tree - A cross-platform USB device tree viewer and monitor</title>
+      <title>
+        USB Tree - A cross-platform USB device tree viewer and monitor
+      </title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta
         name="description"
