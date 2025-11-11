@@ -18,11 +18,13 @@ export default function RootLayout({
   return (
     // suppressHydrationWarning is for dark mode support (next-themes).
     <html lang="en" suppressHydrationWarning>
-      <body className={`dark:bg-black ${inter.className}`}>
+      <body
+        className={`dark:bg-black ${inter.className} flex min-h-screen flex-col`}
+      >
         <ThemeProvider attribute="class">
           <Lines />
           <Header />
-          {children}
+          <main className="flex-grow">{children}</main>
           <Footer />
           <ScrollToTop />
         </ThemeProvider>
