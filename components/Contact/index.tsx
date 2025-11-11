@@ -18,13 +18,13 @@ export default function Contact() {
           <div className="absolute top-0 left-0 -z-1 h-2/3 w-full rounded-lg bg-linear-to-t from-transparent to-[#dee7ff47] dark:bg-linear-to-t dark:to-[#252A42]"></div>
           <div className="absolute bottom-[-255px] left-0 -z-1 h-full w-full">
             <Image
-              src="./images/shape/shape-dotted-light.svg"
+              src="/images/shape/shape-dotted-light.svg"
               alt=""
               className="dark:hidden"
               fill
             />
             <Image
-              src="./images/shape/shape-dotted-dark.svg"
+              src="/images/shape/shape-dotted-dark.svg"
               alt=""
               className="hidden dark:block"
               fill

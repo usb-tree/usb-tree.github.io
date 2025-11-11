@@ -54,7 +54,7 @@ export default function Header() {
           >
             <img
               src="/images/icon/github.svg"
-              alt="github logo"
+              alt="GitHub"
               className="img-svg-link dark:invert"
             />
           </a>

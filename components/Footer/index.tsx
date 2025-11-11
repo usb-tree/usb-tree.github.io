@@ -80,7 +80,7 @@ export default function Footer() {
                   >
                     <img
                       src="/images/icon/linkedin.svg"
-                      alt="Linkedin logo"
+                      alt="LinkedIn"
                       className="img-svg-link w-6 dark:invert"
                     />
                   </a>

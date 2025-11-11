@@ -35,13 +35,13 @@ export default function ThemeToggler() {
     >
       <img
         src="/images/icon/icon-moon.svg"
-        alt="moon icon"
+        alt="Dark mode"
         className="dark:hidden"
       />
 
       <img
         src="/images/icon/icon-sun.svg"
-        alt="sun icon"
+        alt="Light mode"
         className="hidden dark:block"
       />
     </button>
