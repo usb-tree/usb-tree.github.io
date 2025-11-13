@@ -21,6 +21,8 @@ export default function Download() {
   const downloadUrls: Record<string, string> = {
     windows:
       "https://github.com/AOzmond/usb-tree/releases/latest/download/usb-tree-windows-amd64.zip",
+    "windows installer":
+      "https://github.com/AOzmond/usb-tree/releases/latest/download/usb-tree-amd64-installer.exe",
     linux:
       "https://github.com/AOzmond/usb-tree/releases/latest/download/usb-tree-linux-amd64.tar.gz",
   };
@@ -77,6 +79,9 @@ export default function Download() {
                   aria-label="Select your Operating System"
                 >
                   <option value="">Select your OS</option>
+                  <option value="windows installer">
+                    Windows Installer x64 (.exe)
+                  </option>
                   <option value="windows">Windows x64 (.zip)</option>
                   <option value="linux">Linux x64 (.tar.gz)</option>
                 </select>
