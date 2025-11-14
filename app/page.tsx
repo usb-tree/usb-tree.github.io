@@ -4,7 +4,10 @@ import Features from "@/components/Features";
 import Download from "@/components/Download";
 import Contact from "@/components/Contact";
 
+const siteUrl = "https://usb-tree.github.io/";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "USB Tree - A cross-platform USB device tree viewer and monitor",
 
   // other metadata
