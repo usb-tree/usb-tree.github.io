@@ -102,7 +102,7 @@ export default function Footer() {
                   <a
                     rel="noopener"
                     target="_blank"
-                    href="https://bsky.app/profile/alastair-ozmond.bsky.social"
+                    href="https://bsky.app/profile/ozumm.bsky.social"
                   >
                     <img
                       src="/images/icon/bluesky.svg"
