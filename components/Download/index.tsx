@@ -139,12 +139,12 @@ export default function Download() {
                   <code className="block font-mono">usb-tree-app-bin</code>
                   <code className="block font-mono">usb-tree-app</code>
                 </div>
-                {/*<p>Windows Package Manager</p>*/}
-                {/*<div className="rounded-lg bg-black/90 p-4 text-white">*/}
-                {/*  <code className="block font-mono">*/}
-                {/*    winget install usb-tree-app*/}
-                {/*  </code>*/}
-                {/*</div>*/}
+                <p>Windows Package Manager</p>
+                <div className="rounded-lg bg-black/90 p-4 text-white">
+                  <code className="block font-mono">
+                    winget install USBTree.USBTree
+                  </code>
+                </div>
               </div>
             </motion.div>
           </div>
