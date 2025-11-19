@@ -4,8 +4,6 @@ A landing page for [USB Tree](https://github.com/AOzmond/usb-tree), built with N
 
 Built using the [Solid-Next.js template](https://nextjstemplates.com/templates/solid).
 
----
-
 ## Tech Stack
 
 - **Framework:** Next.js 16
@@ -15,8 +13,6 @@ Built using the [Solid-Next.js template](https://nextjstemplates.com/templates/s
 - **Animation:** Framer Motion
 - **Linting:** ESLint (Next.js config)
 - **Formatting:** Prettier
-
----
 
 ## Getting Started
 
@@ -28,6 +24,7 @@ Built using the [Solid-Next.js template](https://nextjstemplates.com/templates/s
 ```bash
  bun install
  ```
+
 ### Run the development server
 ```bash
  bun dev
