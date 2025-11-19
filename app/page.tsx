@@ -20,7 +20,7 @@ export const metadata: Metadata = {
       "USB Tree - A free, open-source desktop app for Windows and Linux. View connected USB devices in a tree structure and monitor real-time connection changes.",
     images: [
       {
-        url: "/images/socialshare.png",
+        url: "/images/socialshare/socialshare.png",
         width: 1200,
         height: 630,
         alt: "USB Tree - Your multiplatform USB buddy",
