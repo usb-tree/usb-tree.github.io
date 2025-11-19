@@ -25,6 +25,8 @@ export default function Download() {
       "https://github.com/AOzmond/usb-tree/releases/latest/download/usb-tree-amd64-installer.exe",
     linux:
       "https://github.com/AOzmond/usb-tree/releases/latest/download/usb-tree-linux-amd64.tar.gz",
+    "linux arm":
+      "https://github.com/AOzmond/usb-tree/releases/latest/download/usb-tree-linux-arm64.tar.gz",
   };
 
   return (
@@ -64,7 +66,7 @@ export default function Download() {
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 1, delay: 0.5 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
               viewport={{ once: true }}
               className="text-center"
             >
@@ -84,6 +86,8 @@ export default function Download() {
                   </option>
                   <option value="windows">Windows x64 (.zip)</option>
                   <option value="linux">Linux x64 (.tar.gz)</option>
+                  <option value="linux arm">Linux arm64 (.tar.gz)</option>
+
                 </select>
                 <a
                   className={`lg:text-para2 w-64 rounded-lg bg-blue-600 px-6 py-3 text-center text-lg font-semibold text-white transition-all focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none dark:bg-blue-500 ${
@@ -127,7 +131,7 @@ export default function Download() {
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 1, delay: 0.7 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
               viewport={{ once: true }}
             >
               <h3 className="xl:text-sectiontitle3 mb-2.5 text-3xl font-bold text-black dark:text-white">
