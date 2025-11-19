@@ -29,6 +29,10 @@ export const metadata: Metadata = {
     type: "website",
   },
 
+  appleWebApp: {
+    title: "USB Tree",
+  },
+
   twitter: {
     card: "summary_large_image",
     title: "USB Tree - A cross-platform USB device tree viewer and monitor",
