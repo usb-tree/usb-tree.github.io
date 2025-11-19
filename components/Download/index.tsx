@@ -21,6 +21,8 @@ export default function Download() {
   const downloadUrls: Record<string, string> = {
     windows:
       "https://github.com/AOzmond/usb-tree/releases/latest/download/usb-tree-windows-amd64.zip",
+    "windows installer":
+      "https://github.com/AOzmond/usb-tree/releases/latest/download/usb-tree-amd64-installer.exe",
     linux:
       "https://github.com/AOzmond/usb-tree/releases/latest/download/usb-tree-linux-amd64.tar.gz",
   };
@@ -77,6 +79,9 @@ export default function Download() {
                   aria-label="Select your Operating System"
                 >
                   <option value="">Select your OS</option>
+                  <option value="windows installer">
+                    Windows Installer x64 (.exe)
+                  </option>
                   <option value="windows">Windows x64 (.zip)</option>
                   <option value="linux">Linux x64 (.tar.gz)</option>
                 </select>
@@ -134,12 +139,12 @@ export default function Download() {
                   <code className="block font-mono">usb-tree-app-bin</code>
                   <code className="block font-mono">usb-tree-app</code>
                 </div>
-                {/*<p>Windows Package Manager</p>*/}
-                {/*<div className="rounded-lg bg-black/90 p-4 text-white">*/}
-                {/*  <code className="block font-mono">*/}
-                {/*    winget install usb-tree-app*/}
-                {/*  </code>*/}
-                {/*</div>*/}
+                <p>Windows Package Manager</p>
+                <div className="rounded-lg bg-black/90 p-4 text-white">
+                  <code className="block font-mono">
+                    winget install USBTree.USBTree
+                  </code>
+                </div>
               </div>
             </motion.div>
           </div>

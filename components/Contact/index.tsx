@@ -92,7 +92,7 @@ export default function Contact() {
                     />
                   </a>
                   <a
-                    href="https://bsky.app/profile/alastair-ozmond.bsky.social"
+                    href="https://bsky.app/profile/ozumm.bsky.social"
                     rel="noopener"
                     target="_blank"
                     className="flex items-center"

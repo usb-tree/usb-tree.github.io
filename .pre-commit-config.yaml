@@ -1,0 +1,19 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+  - repo: local
+    hooks:
+      - id: prettier
+        name: Run Prettier
+        entry: bunx prettier --write --ignore-unknown .
+        language: system
+        pass_filenames: false
+      - id: bun-lint
+        name: Run Bun Lint
+        entry: bun lint
+        language: system
+        pass_filenames: false
